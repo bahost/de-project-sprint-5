@@ -3,7 +3,7 @@ import pandas as pd
 import psycopg2
 # import pymongo
 from airflow import DAG
-from airflow.operators import PostgresOperator
+from airflow.operators.postgres_operator import PostgresOperator
 from airflow.operators import DummyOperator
 from airflow.operators import PythonOperator
 import datetime
